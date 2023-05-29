@@ -1,0 +1,664 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Viva Seating System</title>
+	<style type="text/css">
+    body{
+      position: relative;
+    }
+		.Layer1{
+			 width:101.5%; 
+			 height: 40%; 
+			 background-color: 0f2c81;
+			 margin-left: -8px;
+			 margin-top: -16px;
+		}
+		.layer2{
+			width: 101.5%;
+			height: 8%;
+			background-color: white;
+			margin-left: -8px;
+			margin-top: -280px;
+		}
+		.layer3{
+			width: 99.5%;
+			height: 22%;
+			background-color: white;
+			margin-top: 20px;
+			margin-left: 2px;
+		}
+			.btn1 {
+  background-color: white;
+  color: balck;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown{
+	margin-left: 480px;
+	margin-top: -95px;
+}
+
+.btn1:hover, .btn1:focus {
+  background-color: 0f2c81;
+  color: white;
+}
+
+
+
+.drop1 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.drop1 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+		.btn2 {
+  background-color: white;
+  color: balck;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.btn2:hover, .btn2:focus {
+  background-color: 0f2c81;
+  color: white;
+}
+
+
+
+.drop2 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 135px;
+}
+
+.drop2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+		.btn3 {
+  background-color: white;
+  color: balck;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.btn3:hover, .btn3:focus {
+  background-color: 0f2c81;
+  color: white;
+}
+
+
+
+.drop3 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left:215px ;
+
+}
+
+.drop3 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+		.btn4 {
+  background-color: white;
+  color: balck;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.btn4:hover, .btn4:focus {
+  background-color: 0f2c81;
+  color: white;
+}
+
+
+
+.drop4 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 390px;
+}
+
+.drop4 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+		.btn5 {
+  background-color: white;
+  color: balck;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.btn5:hover, .btn5:focus {
+  background-color: 0f2c81;
+  color: white;
+}
+
+
+
+.drop5 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 502px;
+}
+
+.drop5 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+		.btn6 {
+  background-color: white;
+  color: balck;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.btn6:hover, .btn6:focus {
+  background-color: 0f2c81;
+  color: white;
+}
+
+
+
+.drop6 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 615px;
+}
+
+.drop6 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+		.btn7 {
+  background-color: white;
+  color: balck;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.btn7:hover, .btn7:focus {
+  background-color: 0f2c81;
+  color: white;
+}
+
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+@media only screen and (max-width: 768px) {
+  
+}
+.btn1 p{
+
+font-size:18px; margin-left:105px; margin-top:-25px; 
+}
+.btn2 p{
+font-size:18px; margin-left:55px; margin-top:-25px;
+}
+.btn3 p{
+  font-size:18px; margin-left:150px; margin-top:-25px;
+}
+.btn4 p{
+  font-size:18px; margin-left:85px; margin-top:-25px;
+}
+.btn5 p{
+  font-size:18px; margin-left:87px; margin-top:-25px;
+}
+.btn6 p{
+font-size:18px; margin-left:85px; margin-top:-25px;
+}
+.img1 img{
+  width:210px;margin-top:-215px; margin-left:700px;
+}
+.img2 img{
+  width:150px;margin-top:-210px; margin-left:900px;
+}
+.img3 img{
+  width:190px;margin-top:-215px; margin-left:1030px;
+}
+.img4 img{
+  width:155px;margin-top:-215px; margin-left:1200px;
+}
+.img5 img{
+  width:140px;margin-top:-215px; margin-left:450px; 
+}
+.img img{
+width: 130px; margin-top: -75px; margin-left: 30px;
+}
+.l1{
+  width:101.5%; height:1%; background-color:lightgreen; margin-top:4px; margin-left: -8px;
+}
+.l2{
+  color: rgba(0, 0, 0, 0.7); background-color: white; margin-top: 40px; text-align: center;height: 8%; border-color:0f2c81; border:0f2c81; border-width: 2px; border-style: solid; width:30%; margin-left: 2%;
+}
+
+.l3{
+  margin-top: -50px;color: rgba(0, 0, 0, 0.7); margin-left:100px;
+}
+.l4{
+  color: rgba(0, 0, 0, 0.7); background-color: white; margin-top:-65px;margin-left:36%;text-align: center;height: 8%; border-color:0f2c81; border:0f2c81; border-width: 2px; border-style: solid; width:30%;
+}
+.l5{
+  margin-top: -50px; color:rgba(0, 0, 0, 0.7); margin-left:40%;
+}
+.l6{
+  color: rgba(0, 0, 0, 0.7); background-color: white; margin-top:-65px;margin-left:70%;text-align: center;height: 8%; border-color:0f2c81; border:0f2c81; border-width: 2px; border-style: solid; width:30%;
+}
+.l7{
+  margin-top: 50px; color:rgba(0, 0, 0, 0.7); margin-left:35%;
+}
+.l8{
+  margin-top: -50px; color:rgba(0, 0, 0, 0.7); margin-left:74%;
+}
+.l9{
+  margin-top:20px;
+   width:100%; 
+}
+.l10{
+margin-top:30px;
+width:23%;
+}
+.l11{
+  width:150px; margin-top:-15px;
+}
+.l12{
+width:170px;margin-top:-75px; margin-left:150px; 
+}
+.l13{
+width:210px;margin-top:-165px; margin-left:550px;
+}
+.l14{
+margin-top:-390px; margin-left: 91%;
+width:23%; 
+}
+.l15{
+margin-left: 60px; margin-top:-27%;
+}
+.l16{
+border: black; border-width:2px; border-style: solid;
+width:23%;
+}
+.l17{
+  border: black; border-width:2px; border-style: solid;
+  width:23%;
+}
+.l18{
+  border: black; border-width:2px; border-style: solid;
+  width:23%;
+}
+.l19{
+  border: black; border-width:2px; border-style: solid;
+  width:23%;
+}
+.l20{
+color: rgba(0, 0, 0, 0.7); margin-top:10%; margin-left: 20%;
+}
+.l21{
+  width:50%; margin-left: 23%; 
+}
+.l22{
+padding-left: 60px; margin-left:7%;
+}
+.l23{
+border: black; border-width:2px; border-style: solid;
+width: 30%;
+}
+.l24{
+border: black; border-width:2px; border-style: solid;
+width: 30%;
+}
+.l25{
+border: black; border-width:2px; border-style: solid;
+width: 30%;
+}
+.l26{
+  text-align: center; margin-top:5%;
+}
+.l27{
+  width:25%; height:30%; border: black; border-width:2px; border-style: solid; margin-top: 40px; margin-left:20%;
+}
+.l28{
+  margin-left: 35%;
+  width: 30%;
+}
+.l29{
+  font-size:15px;text-align:center; width:70%; margin-left: 15%;
+}
+.l30{margin-left:38%;}
+.l31{
+background-color: red; color: white; border: red; font-size: 15px; width: 28%; height: 18%; margin-left: 36%;margin-top: -10px;
+}
+.l32{
+  width:25%; height:30%; border: black; border-width:2px; border-style: solid; margin-top: -245px; margin-left:60%;
+}
+.l33{
+   width:30%;margin-left: 35%; 
+}
+.l34{
+   font-size:15px;text-align:center; width:70%; margin-left: 15%;
+}
+.l35{
+  margin-left:38%;
+}
+.l36{
+background-color: red; color: white; border: red; font-size: 15px; width: 28%; height: 18%; margin-left: 36%;margin-top: -10px;
+}
+.l37{
+width: 101.5%; height: 40%; margin-left:-8px;background-color:0f2c81; margin-top:50px;
+}
+.l38{
+width: 101.5%; height: 25%; margin-left:-8px;background-color:white;  margin-top:-250px;
+}
+.l39{
+  margin-left: 30%; padding-top: 10px;
+}
+.l40{
+  margin-left:30%; margin-top: -50px;
+}
+.l41{
+    margin-left:30%;
+}
+.l42{
+    margin-left:30%;
+}
+.l43{
+    margin-left:30%;
+}
+.l44{
+  margin-left:60%; margin-top: -150px;
+}
+.l45{
+  margin-left:60%; 
+}
+.l46{
+  margin-left:60%; 
+}
+.l47{
+    margin-left:60%; 
+}
+
+	</style>
+
+
+
+
+
+
+
+
+</head>
+<body>
+	<div class="Layer1">
+	
+		    
+	</div>
+		<div class="layer2"> 
+			<a href="home.html" class="img"><img src="logo.png" style=""></a>
+			<div class="dropdown">
+  <button onclick="drop1()" class="btn1">Mattresses <p style="">&#8964;</p></button>
+  <div id="drop1" class="drop1">
+    <a href="#home">1</a>
+    <a href="#about">2</a>
+    <a href="#contact">3</a>
+  </div>
+ <button onclick="drop2()" class="btn2">Bed <p style=" ">&#8964;</p></button>
+  <div id="drop2" class="drop2">
+    <a href="#home">1</a>
+    <a href="#about">2</a>
+    <a href="#contact">3</a>
+  </div>
+  <button onclick="drop3()" class="btn3">SmartGrid Chairs <p style=" ">&#8964;</p></button>
+  <div id="drop3" class="drop3">
+    <a href="#home">1</a>
+    <a href="#about">2</a>
+    <a href="#contact">3</a>
+  </div>
+   <button onclick="drop4()" class="btn4">Bundels <p style=" ">&#8964;</p></button>
+  <div id="drop4" class="drop4">
+    <a href="#home">1</a>
+    <a href="#about">2</a>
+    <a href="#contact">3</a>
+  </div>
+   <button onclick="drop5()" class="btn5">Bedding <p style=" ">&#8964;</p></button>
+  <div id="drop5" class="drop5">
+    <a href="#home">1</a>
+    <a href="#about">2</a>
+    <a href="#contact">3</a>
+  </div>
+ <button onclick="drop6()" class="btn6">Pillows <p style=" ">&#8964;</p></button>
+  <div id="drop6" class="drop6">
+    <a href="#home">1</a>
+    <a href="#about">2</a>
+    <a href="#contact">3</a>
+  </div>
+   <button onclick="drop7()" class="btn7">Our Store </button>
+
+</div>
+
+
+		</div>
+		<div class="layer3">
+    <img class="l11"src="img1.png" style="">  
+    </div>
+<div>   <a href=""><img class="l12"src="img2.png" style=""></a></div>
+<div style="margin-top: -1%;"><a href=""><img class="l13" src="img3.png" style=" "></a>
+    <a href="" class="img1"><img src="img4.png" style=" "></a>
+    <a href="" class="img2"><img src="img5.png" style=" "></a>
+    <a href="" class="img3"><img src="img6.png" style=" "></a>
+    <a href="" class="img4"><img src="img7.png" style=" "></a>
+    <a href="" class="img5"><img src="img8.png" style=""></a></div>
+<div  class = "l1"style=" "></div>
+    <div class="l2"style=""></div><h2 class="l3"style="">SMART GRID TECHNOLOGY</h2>
+       
+            <div class="l4"style=""></div><h2 class="l5" style="">ERGONOMICS REDEFINED</h2>
+
+            <div class= "l6"style=""></div><h2 class="l8"style="">ERGONOMICS REDEFINED</h2>
+            <div> <img class="l9"src="img9.png"style=""></div>
+            <h1 class="l7" style="">OUR PRODUCT CATEGORIES</h2>
+            <div><img class="l10" src="img10.png" style="">
+      
+              <img src="img11.png" class="l14" style=""></div>
+<div class ="l15"style="">       <a href=""><img class="l16"src="img3.png"  style=""></a> 
+             <a href=""><img src="img4.png" class="l17"  style=""></a> 
+
+                     <a href=""><img src="img3.png" class="l18" style=""></a> 
+                                    <a href="">  <img src="img4.png" class ="l19" style=""></a> </div>
+                                  <h1 class="l20" style="">Why This Chair?</h1>
+                                  <img src="img12.png" class="l21" style="">
+                                  <div class="l22" style=" ">
+                                    <img src="img13.jpeg" class="l23" >
+                                     <img src="img13.jpeg" class="l24" >
+                                      <img src="img13.jpeg" class="l25">
+                                  </div>
+                                  <h2 class="l26" style="">Top Reviews</h2>
+                                  <div class="l27" style=""><img src="img17.png" class ="l28"> <p class="l29" style="">Our office got complete makeover done and now my employees spend more time on the smartgrid chairs which recently got replaced with ordinary chairs</p>
+                                    <h3 class="l30" style="">Nandita, 42</h3><button class="l31" style="">Shop Aristo</button></div>
+                                      <div class="l32" style=""><img src="img17.png" class="l33"> <p class="l34" style="">Our office got complete makeover done and now my employees spend more time on the smartgrid chairs which recently got replaced with ordinary chairs</p>
+                                    <h3 class="l35" style="">Nandita, 42</h3><button class="l36" style="">Shop Aristo</button></div>
+                                    <div class="l37" style="">  </div>
+                                    <div class="l38" style=""><div class="l39" style="">
+                                      <h2>Product</h2>
+                                      <h2 class ="l40" style="">Support</h2>
+                                      <p class="l41" >PRIVACY POLICY</p>
+                                      <p class="l42" >PRIVACY POLICY</p>
+                                      <p class="l43">PRIVACY POLICY</p>
+                                      <h2 class="l44" style="">Quick Line</h2>
+                                       <p class="l45">PRIVACY POLICY</p>
+                                      <p class="l46">PRIVACY POLICY</p>
+                                      <p class="l47">PRIVACY POLICY</p>
+</div>
+
+<script type="text/javascript">
+	function drop1(){
+		document.getElementById("drop1").classList.toggle("show");  
+	}
+window.onclick = function(event){
+		  if (!event.target.matches('.btn1')) {
+			var drops1 = document.getElementsByClassName("drop1");
+			var i;
+			for(i=0; i< drops1.length; i++){
+				var open1 = drops1[i];
+     	 		if (open1.classList.contains('show')) {
+       		 	open1.classList.remove('show');
+      			}	
+			}
+
+		}
+	}
+	function drop2(){
+		document.getElementById("drop2").classList.toggle("show");  
+	}
+window.onclick = function(event1){
+		  if (!event.target.matches('.btn2')) {
+			var drops2 = document.getElementsByClassName("drop2");
+			var j;
+			for(j=0; j< drops2.length; j++){
+				var open2 = drops2[j];
+     	 		if (open2.classList.contains('show')) {
+       		 	open2.classList.remove('show');
+      			}	
+			}
+
+		}
+	}
+function drop3(){
+		document.getElementById("drop3").classList.toggle("show");  
+	}
+window.onclick = function(event){
+		  if (!event.target.matches('.btn3')) {
+			var drops1 = document.getElementsByClassName("drop3");
+			var i;
+			for(i=0; i< drops1.length; i++){
+				var open1 = drops1[i];
+     	 		if (open1.classList.contains('show')) {
+       		 	open1.classList.remove('show');
+      			}	
+			}
+
+		}
+	}
+	function drop4(){
+		document.getElementById("drop4").classList.toggle("show");  
+	}
+window.onclick = function(event){
+		  if (!event.target.matches('.btn4')) {
+			var drops1 = document.getElementsByClassName("drop4");
+			var i;
+			for(i=0; i< drops1.length; i++){
+				var open1 = drops1[i];
+     	 		if (open1.classList.contains('show')) {
+       		 	open1.classList.remove('show');
+      			}	
+			}
+
+		}
+	}
+  function drop5(){
+    document.getElementById("drop5").classList.toggle("show");  
+  }
+window.onclick = function(event){
+      if (!event.target.matches('.btn4')) {
+      var drops1 = document.getElementsByClassName("drop4");
+      var i;
+      for(i=0; i< drops1.length; i++){
+        var open1 = drops1[i];
+          if (open1.classList.contains('show')) {
+            open1.classList.remove('show');
+            } 
+      }
+
+    }
+  }
+  function drop6(){
+    document.getElementById("drop6").classList.toggle("show");  
+  }
+window.onclick = function(event){
+      if (!event.target.matches('.btn4')) {
+      var drops1 = document.getElementsByClassName("drop4");
+      var i;
+      for(i=0; i< drops1.length; i++){
+        var open1 = drops1[i];
+          if (open1.classList.contains('show')) {
+            open1.classList.remove('show');
+            } 
+      }
+
+    }
+  }
+</script>
+</body>
+
+</html>
